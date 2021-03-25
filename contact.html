@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- custom css   -->
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+
+<body style="background-color:white !important;background-image: none;color: black  !important;">
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Links -->
+        <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" class="logo-img" alt=""></a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Forecast.html">Forecast</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <div class="jumbotron bg-warning">
+        <h1 class="text-center" style="color: black  !important;">Contact Us</h1>
+
+    </div>
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+            <label for="smail">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email.." />
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Your Subject.." />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write something.." style="height: 200px"></textarea>
+
+
+        </form>
+        <button id="btn" class="btn btn-primary">
+            Submit
+          </button>
+    </div>
+    <!-- contact form ends -->
+    <div style="display: none" id="data-box" class="container">
+        <h3>Success!</h3>
+        <hr />
+        <p>Thanks For contacting Us we will reach you back soon.</p>
+    </div>
+    <div class="footer">
+        <p>&#169;WeatherMania 2021 All rights reserved.</p>
+    </div>
+</body>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="assets/js/contactEmail.js"></script>
+
+</html>
