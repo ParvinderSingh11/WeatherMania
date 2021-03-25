@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #e74c3c;
+    background: linear-gradient(rgba(112, 105, 172, 0.7), rgba(112, 105, 172, 0.7)), url("../img/bg.jpg");
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer {
+    margin-top: 30px;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    background-color: #282846;
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #282846 !important;
+}
+
+.logo-img {
+    width: 165px;
+}
+
+.jumbotron {
+    background-color: rgb(0, 0, 0, 0);
+    color: #d8ebe4;
+}
+
+.searchbar {
+    margin-top: 20px;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.search_input {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 600px;
+    caret-color: transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search_icon {
+    background: white;
+    color: #e74c3c;
+}
+
+.search_icon {
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+}
+
+h1.text-center {
+    font-size: 4rem;
+    color: white;
+}
+
+.widget-container {
+    width: 612px;
+    height: 412px;
+    display: block;
+    background-color: #282846;
+    border-radius: 25px;
+    margin: 5px auto;
+    color: #d8ebe4;
+}
+
+
+/* Widget 4 Quarter Division here */
+
+.cont-1 {
+    height: 60%;
+    width: 50%;
+    /*   background-color:red; */
+    padding: 55px 0 0 70px;
+    display: inline-block;
+}
+
+.cont-2 {
+    height: 60%;
+    width: 50%;
+    /*   background-color: blue; */
+    float: right;
+    padding: 55px 0 0 0;
+}
+
+.cont-3 {
+    height: 40%;
+    width: 45%;
+    /*   background-color:orange; */
+    float: left;
+    margin: 0;
+    padding: 40px 0 0 50px;
+}
+
+.cont-4 {
+    height: 40%;
+    width: 55%;
+    /*   background-color: brown; */
+    float: right;
+    padding: 25px 0 0 60px;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* cont-1 Div CSS */
+
+#city {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+#day {
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 18px;
+}
+
+#date {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 4px;
+}
+
+#time {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+#codepen-link {
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.cont-1>a {
+    text-decoration: none;
+    color: white;
+}
+
+.cont-1>a:hover {
+    color: #b0bec5;
+}
+
+
+/* cont-2 Div CSS */
+
+#weather-status {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cont-2>img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 1px auto 0 auto;
+}
+
+
+/* Horizontal-Half-divider */
+
+.horizontal-half-divider {
+    width: 100%;
+    height: 3px;
+    margin-top: -5px;
+    background-color: #263238;
+}
+
+.vertical-half-divider {
+    width: 3px;
+    position: absolute;
+    height: 167px;
+    background-color: #263238;
+    float: right;
+    display: inline-block;
+    padding: 0;
+}
+
+
+/* cont-3 CSS */
+
+#temperature,
+#celsius,
+#temp-divider,
+#fahrenheit {
+    display: inline;
+    vertical-align: middle;
+}
+
+#temperature {
+    font-size: 60px;
+    font-weight: 800;
+    margin-right: 5px;
+}
+
+#celsius {
+    margin-right: 10px;
+}
+
+#fahrenheit {
+    margin-right: 5px;
+    color: #b0bec5;
+}
+
+#celsius,
+#temp-divider,
+#fahrenheit {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#celsius:hover,
+#fahrenheit:hover {
+    cursor: pointer;
+}
+
+
+/* cont-4 CSS */
+
+.other-details-key {
+    float: left;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.other-details-values {
+    float: left;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 40px;
+}
